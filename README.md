@@ -1,1 +1,2 @@
-**Qunatization Functions for Computer Vision Tasks**
+**Quantization Functions for Computer Vision Tasks**
+
