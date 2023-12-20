@@ -9,7 +9,7 @@ import torch
 import torch.nn.functional as F
 from torch import Tensor
 #from .qexample import STE
-from base import QBaseConv2d, QBase, QBaseLinear
+from base_layer import QBaseConv2d, QBase, QBaseLinear
 import torch.nn as nn
 #from new_quant import *
 from qmethods import *
