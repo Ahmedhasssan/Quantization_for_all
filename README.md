@@ -17,17 +17,6 @@ For hardware-specific tasks, fixed-grid-based quantization is better to adopt. F
 
 1. Install the requirements by running "pip install -r requirements.txt"
 
-## Running the Tests
-
-
-### Break down into end-to-end tests
-
-
-### And coding style tests
-
-
-## Deployment
-
 
 
 ## Built With
