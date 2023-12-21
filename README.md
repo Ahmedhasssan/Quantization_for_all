@@ -1,7 +1,7 @@
 
 # Quantization For All
 
-We have implemented different quantization schemes including linear, non-linear, and fixed-grid-based binning.
+We have implemented different quantization schemes including linear, non-linear, and fixed-grid-based binning for both weights and activations.
 
 ## Getting Started
 
