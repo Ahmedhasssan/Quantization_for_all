@@ -23,7 +23,7 @@ We have implemented different quantization schemes including linear, non-linear,
 
 ### Prerequisites
 - Python >= 3.8
-- PyTorch >= 1.12
+- PyTorch >= 1.9
 - CUDA (Optional, for GPU acceleration)
 
 ### Install Required Packages
@@ -36,6 +36,10 @@ pip install -r requirements.txt
 ```
 
 ## Usage
+### Getting Started
+
+You are required to have the basic knowledge of quantization to adopt any relevant technique and implement it for your use.
+For hardware-specific tasks, fixed-grid-based quantization is better to adopt. For software-level quantization, one can choose any of the techniques provided above depending on the dynamic range of weight and activations.
 
 ### Example Scripts
 The repository includes examples for training and evaluating SNNs on popular Event (**DVS-MNIST**, **DVS-CIFAR-10**) and Static image (**MNIST**, **CIFAR-10** and **Caltech-101**) datasets:
@@ -44,21 +48,6 @@ The repository includes examples for training and evaluating SNNs on popular Eve
 bash scripts/vgg9_dvs_cifar.sh
 bash scripts/vgg9_dvs_caltech.sh
 ```
-
-## Methodology
-
-SpQuant-SNN and IM-SNN introduces:
-
-1. **Membrane Potential Quantization**:
-   - Reduces the precision of membrane potential representation to as low as 1.5 bits without degrading performance.
-
-2. **Sparse Activations**:
-   - Utilizes sparsity in spiking activations to minimize redundant computations, achieving significant energy savings.
-
-3. **End-to-End Pipeline**:
-   - Combines quantization and sparsity in a unified framework for seamless training and inference.
-
-For a detailed explanation, refer to our [paper](https://www.frontiersin.org/journals/neuroscience/articles/10.3389/fnins.2024.1440000/full).
 
 ## Results
 
@@ -75,6 +64,7 @@ Papers that used this repository:
 
 1. **IM-SNN**: Hasssan, A., Meng, J., Anupreetham, A., & Seo, J. S. (2024, August). IM-SNN: Memory-Efficient Spiking Neural Network with Low-Precision Membrane Potentials and Weights. IEEE/ACM International Conference on Neuromorphic Systems (ICONS).*. [Link to paper](https://par.nsf.gov/biblio/10545833).
 2. **Sp-QuantSNN**: Hasssan, Ahmed, Jian Meng, Anupreetham Anupreetham, and Jae-sun Seo. "SpQuant-SNN: ultra-low precision membrane potential with sparse activations unlock the potential of on-device spiking neural networks applications." Frontiers in Neuroscience 18 (2024): 1440000. [Link to paper](https://www.frontiersin.org/journals/neuroscience/articles/10.3389/fnins.2024.1440000/full).
+3. 
 
 
 We welcome feedback, suggestions, and contributions to enhance SpQuant-SNN!
@@ -82,12 +72,6 @@ We welcome feedback, suggestions, and contributions to enhance SpQuant-SNN!
 
 
 
-We have implemented different quantization schemes including linear, non-linear, and fixed-grid-based binning for both weights and activations.
-
-## Getting Started
-
-You are required to have the basic knowledge of quantization to adopt any relevant technique and implement it for your use.
-For hardware-specific tasks, fixed-grid-based quantization is better to adopt. For software-level quantization, one can choose any of the techniques provided above depending on the dynamic range of weight and activations.
 
 ### Prerequisites
 
