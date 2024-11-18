@@ -49,6 +49,16 @@ bash scripts/vgg9_dvs_cifar.sh
 bash scripts/vgg9_dvs_caltech.sh
 ```
 
+# Methodology
+## Built With
+
+* [PACT Qunat](https://arxiv.org/abs/1805.06085) 
+* [SAWB Quant](https://arxiv.org/abs/1807.06964)
+* [Log-2 Quant](https://arxiv.org/abs/2203.05025)
+* [AdRound Quant](https://arxiv.org/pdf/2004.10568.pdf)
+* [Straigh Through Aproxx](https://openreview.net/pdf?id=Skh4jRcKQ)
+ 
+
 ## Results
 
 ## Contact
@@ -64,36 +74,7 @@ Papers that used this repository:
 
 1. **IM-SNN**: Hasssan, A., Meng, J., Anupreetham, A., & Seo, J. S. (2024, August). IM-SNN: Memory-Efficient Spiking Neural Network with Low-Precision Membrane Potentials and Weights. IEEE/ACM International Conference on Neuromorphic Systems (ICONS).*. [Link to paper](https://par.nsf.gov/biblio/10545833).
 2. **Sp-QuantSNN**: Hasssan, Ahmed, Jian Meng, Anupreetham Anupreetham, and Jae-sun Seo. "SpQuant-SNN: ultra-low precision membrane potential with sparse activations unlock the potential of on-device spiking neural networks applications." Frontiers in Neuroscience 18 (2024): 1440000. [Link to paper](https://www.frontiersin.org/journals/neuroscience/articles/10.3389/fnins.2024.1440000/full).
-3. 
 
 
-We welcome feedback, suggestions, and contributions to enhance SpQuant-SNN!
-
-
-
-
-
-### Prerequisites
-
-1. GPU is required for training.
-2. Pytorch >1.9
-
-### Installing
-
-1. Install the requirements by running "pip install -r requirements.txt"
-
-
-
-## Built With
-
-* [PACT Qunat](https://arxiv.org/abs/1805.06085) 
-* [SAWB Quant](https://arxiv.org/abs/1807.06964)
-* [Log-2 Quant](https://arxiv.org/abs/2203.05025)
-* [AdRound Quant](https://arxiv.org/pdf/2004.10568.pdf)
-* [Straigh Through Aproxx](https://openreview.net/pdf?id=Skh4jRcKQ)
- 
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+We welcome feedback, suggestions, and contributions to enhance Quantization approaches!
 
